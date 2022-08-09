@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+body {
+    background: black;
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+header {
+    background-image: url('img/main-bg/3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 70% 0;
+}
+
+/* ? NAVBAR */
+
+nav {
+    width: 85%;
+    color: white;
+}
+
+.navbar--menu {
+    width:100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.navbar--menu__logo {
+    flex-basis: 30%;
+    text-align: left;
+}
+
+.navbar--menu__links {
+    flex-basis: 70%;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.navbar--menu__links > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* ! WLC TEXT */
+
+.wlc--container {
+    color: white; 
+}
+
+.wlc--text {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+.wlc--text > h2 {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.15;
+    padding: 5px 5px 5px 0px;
+}
+
+.wlc--text > p {
+    margin: 10px 25px 10px 0px;
+}
+
+.btn-portfolio_view {
+    margin: 10px 25px 10px 0px;
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(190, 149, 86);
+}
+
+
+
+/* ! PORTFOLIO */
+
+main {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.portfolio { 
+    width: 85%;
+    padding: 15px;
+}
+
+.portfolio--title__h2 {
+    font-size: 4em;
+    opacity: 0.07;
+    letter-spacing: 15px;
+    z-index: 0;
+    margin-left: -110px;
+    margin-top: 20px;
+}
+
+.portfolio--title__h3 {
+    margin-top: -5px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+}
+
+.portfolio--title__container {
+    line-height: 0;
+    padding: 20px;
+}
+
+.portfolio--title__p {
+    width: 60%;
+    margin-left: 0;
+    padding: 0px 20px 20px 20px;
+}
+
+.portfolio--filter {
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio--filter__item {
+    display: inline;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.active {
+    background-color: rgb(190, 149, 86);
+    color: white;
+}
+
+.portfolio--filter__item:hover {
+    background-color: rgb(190, 149, 86);
+    color: white;
+}
+
+
+.portfolio--grid {
+    margin-top: 30px;
+    height: 125vh;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px 15px; 
+    grid-template-areas: 
+      "photo_1 photo_2 photo_3"
+      "photo_1 photo_5 photo_6"
+      "photo_4 photo_5 photo_6"
+      "photo_7 photo_8 photo_9"
+      "photo_7 photo_11 photo_12"
+      "photo_10 photo_11 photo_12"; 
+}
+
+.portfolio-box {
+    width: 100%;
+    height: 100%;
+}
+
+.photo_1 { 
+    grid-area: photo_1; 
+    background: url('img/photo1.jpg');
+    background-size: cover;
+}
+.photo_2 { 
+    grid-area: photo_2; 
+    background: url('img/photo2.jpg');
+    background-size: cover;
+}
+.photo_3 { 
+    grid-area: photo_3; 
+    background: url('img/photo3.jpg');
+    background-size: cover;
+}
+.photo_4 { 
+    grid-area: photo_4; 
+    background: url('img/photo4.jpg');
+    background-size: cover;
+}
+.photo_5 { 
+    grid-area: photo_5; 
+    background: url('img/photo5.jpg');
+    background-size: cover;
+}
+.photo_6 { 
+    grid-area: photo_6; 
+    background: url('img/photo6.jpg');
+    background-size: cover;
+}
+.photo_7 { 
+    grid-area: photo_7; 
+    background: url('img/photo7.jpg');
+    background-size: cover;
+}
+.photo_8 { 
+    grid-area: photo_8; 
+    background: url('img/photo8.jpg');
+    background-size: cover;
+}
+
+.photo_9 { 
+    grid-area: photo_9; 
+    background: url('img/photo9.jpg');
+    background-size: cover;
+}
+
+.photo_10 {
+    grid-area: photo_10;
+    background: url('img/photo10.jpg');
+    background-size: cover;
+}
+.photo_11 {
+    grid-area: photo_11;
+    background: url('img/photo11.jpg');
+    background-size: cover;
+}
+.photo_12 {
+    grid-area: photo_12;
+    background: url('img/photo12.jpg');
+    background-size: cover;
+} 
+
+.portfolio-button {
+    width: 85%;
+    text-align: center;
+    margin-top: 25px;
+}
+.btn-view-more {
+    width: 25%;
+    border: none;
+    outline: none;
+    margin: 10px 25px 10px 0px;
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(190, 149, 86);
+}
+
+
+
+
+/* ! FOOTER */
+
+footer {
+    width:90%;
+    color: white;
+    margin-bottom: 25px;
+}
+
+footer > * > h2 {
+    font-size: 1em;
+    padding: 10px 10px 10px 0;
+    margin-left: 0;
+}
+footer > * > p {
+    font-size: 0.8em;
+    margin-left: 0;
+    width: 60%;
+}
+
+footer > * {
+    flex-basis: 25%;
+}
+
+.social-media > i {
+    margin-top: 10px;;
+    padding: 5px;
+}
+
+.social-media > i:hover {
+    color: rgb(190, 149, 86);;
+}
+
+.footer--links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--links > a {
+    margin-left: 0;
+    color: white;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer--links >a:hover {
+    text-decoration: underline;
+}
+
+
+.phone, .location, .mail {
+    font-size: 0.9em;
+}
+
+.phone > i, .location > i, .mail > i {
+    margin-right: 10px;
+    padding-top: 5px;;
+}
+
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    height: 90%;
+    width: 100%;
+}
+
+.box {
+    background-image: url('img/footer/footer-grid.jpg');
+    background-size: cover;
+    width:80%;
+    height: 80%;
+}
