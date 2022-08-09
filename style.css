@@ -83,6 +83,8 @@ nav {
     margin: 10px 25px 10px 0px;
     padding: 15px 25px 15px 25px;
     background-color: rgb(190, 149, 86);
+    outline: none;
+    border: none;
 }
 
 
@@ -150,7 +152,7 @@ main {
 
 .portfolio--grid {
     margin-top: 30px;
-    height: 200vh;
+    height:  200vh;
     display: grid; 
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-rows: repeat(6, 1fr);
@@ -323,3 +325,107 @@ footer > * {
     width:80%;
     height: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .mobile-hide {
+        display: none;
+    }
+
+    .mobile-show {
+        flex-basis: 70%;
+        margin-top: -5px;
+    }
+
+    .burger-container {
+        height: 100%;
+        float: right;
+        padding: 0px 30px 10px 10px;
+    }
+
+    .burger-container > div {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+
+
+
+/* PORTFOLIO */
+.portfolio {
+    width: 98%;
+    padding: 0;
+    margin: 5px;
+}
+.portfolio--title__h2 {
+    font-size: 3em;
+    opacity: 0.07;
+    letter-spacing: 10px;
+}
+
+.portfolio--title__h3 {
+    margin-top: -5px;
+    font-size: 1em;
+}
+
+.portfolio--title__p {
+    font-size: 0.8em;
+}
+
+.portfolio--filter {
+    display: none;
+}
+
+
+.portfolio--grid {
+    width: 95%;
+    margin-top: 30px;
+    height:  200vh;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px 15px; 
+}
+
+.portfolio-button {
+    width: 85%;
+    text-align: center;
+    margin-top: 25px;
+}
+.btn-view-more {
+    width: 50%;
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer--links, .footer--recent {
+    display: none;
+}
+
+.footer--about, .footer--contact {
+    flex-basis: 50%;
+}
+
+.footer--about > p {
+    width:80%;
+}
+
+
+  }
