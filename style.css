@@ -4,9 +4,12 @@
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-
-
 }
+.hidden {
+    display: none;
+}
+
+
 
 body {
     background: black;
@@ -100,6 +103,7 @@ main {
 .portfolio { 
     width: 85%;
     padding: 15px;
+    height: 100%;
 }
 
 .portfolio--title__h2 {
@@ -166,72 +170,122 @@ main {
       "photo_10 photo_11 photo_12"; 
 }
 
+.portfolio--flex {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+}
+
+.portfolio--flex > * {
+    margin-top: 10px;
+    height: 100px;
+}
+
+
+
+
 .portfolio-box {
     width: 100%;
     height: 100%;
 }
 
+.box_1 {
+    background: url('img/photo1.jpg');
+    background-size: cover;
+}
 .photo_1 { 
     grid-area: photo_1; 
-    background: url('img/photo1.jpg');
+}
+
+.box_2 {
+    background: url('img/photo2.jpg');
     background-size: cover;
 }
 .photo_2 { 
     grid-area: photo_2; 
-    background: url('img/photo2.jpg');
+}
+
+.box_3 {
+    background: url('img/photo3.jpg');
     background-size: cover;
 }
 .photo_3 { 
     grid-area: photo_3; 
-    background: url('img/photo3.jpg');
+}
+
+.box_4 {
+    background: url('img/photo4.jpg');
     background-size: cover;
 }
 .photo_4 { 
     grid-area: photo_4; 
-    background: url('img/photo4.jpg');
+}
+
+.box_5 {
+    background: url('img/photo5.jpg');
     background-size: cover;
 }
 .photo_5 { 
     grid-area: photo_5; 
-    background: url('img/photo5.jpg');
+}
+
+.box_6 {
+    background: url('img/photo6.jpg');
     background-size: cover;
 }
 .photo_6 { 
-    grid-area: photo_6; 
-    background: url('img/photo6.jpg');
+    grid-area: photo_6;    
+}
+
+.box_7 {
+    background: url('img/photo7.jpg');
     background-size: cover;
 }
 .photo_7 { 
     grid-area: photo_7; 
-    background: url('img/photo7.jpg');
+} 
+
+.box_8{
+    background: url('img/photo8.jpg');
     background-size: cover;
 }
 .photo_8 { 
     grid-area: photo_8; 
-    background: url('img/photo8.jpg');
-    background-size: cover;
 }
 
-.photo_9 { 
-    grid-area: photo_9; 
+
+.box_9 {
     background: url('img/photo9.jpg');
     background-size: cover;
 }
+.photo_9 { 
+    grid-area: photo_9; 
+}
 
+
+.box_10 {
+    background: url('img/photo10.jpg');
+    background-size: cover;
+}
 .photo_10 {
     grid-area: photo_10;
-    background: url('img/photo10.jpg');
+}
+
+.box_11 {
+    background: url('img/photo11.jpg');
     background-size: cover;
 }
 .photo_11 {
     grid-area: photo_11;
-    background: url('img/photo11.jpg');
+}
+
+.box_12 {
+    background: url('img/photo12.jpg');
     background-size: cover;
 }
 .photo_12 {
     grid-area: photo_12;
-    background: url('img/photo12.jpg');
-    background-size: cover;
 } 
 
 .portfolio-button {

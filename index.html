@@ -8,6 +8,7 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Photographer</title>
 </head>
@@ -66,50 +67,50 @@
 
             <div class="portfolio--filter">
                 <ul class="portfolio--filter__list">
-                    <li class="portfolio--filter__item active">ALL</li>
-                    <li class="portfolio--filter__item">FASHION</li>
-                    <li class="portfolio--filter__item">WEDDING</li>
-                    <li class="portfolio--filter__item">EVENT</li>
-                    <li class="portfolio--filter__item">BUSSINESS</li>
-                    <li class="portfolio--filter__item">PERSONAL</li>
+                    <li class="portfolio--filter__item active" data-id="all">ALL</li>
+                    <li class="portfolio--filter__item" data-id="fashion">FASHION</li>
+                    <li class="portfolio--filter__item" data-id="wedding">WEDDING</li>
+                    <li class="portfolio--filter__item" data-id="event">EVENT</li>
+                    <li class="portfolio--filter__item" data-id="bussiness">BUSSINESS</li>
+                    <li class="portfolio--filter__item" data-id="personal">PERSONAL</li>
                 </ul>
             </div>
 
-            <div class="portfolio--grid">
-                    <div class="portfolio-box photo_1">
+            <div class="portfolio--grid portfolio-change">
+                    <div class="portfolio-box photo_1 box_1 all event" id="1" >
                         <!-- Zdjęcie dodane przez Khoa Võ: https://www.pexels.com/pl-pl/zdjecie/azjatycka-kobieta-w-bieliznie-patrzac-od-hotelu-4918385/ -->
                     </div>
-                    <div class="portfolio-box photo_2">
+                    <div class="portfolio-box photo_2 box_2 all bussiness" id="2">
                         <!-- Zdjęcie dodane przez Linda Christiansen: https://www.pexels.com/pl-pl/zdjecie/miasto-budynek-architektura-okna-5691773/ -->
                     </div>
-                    <div class="portfolio-box photo_3">
+                    <div class="portfolio-box photo_3 box_3 all fashion" id="3">
                         <!-- Zdjęcie dodane przez Kammeran Gonzalez-Keola: https://www.pexels.com/pl-pl/zdjecie/sylwetka-nierozpoznawalnego-surfera-na-pokladzie-5441742/ -->
                     </div>
-                    <div class="portfolio-box photo_4">
+                    <div class="portfolio-box photo_4 box_4 all wedding"  id="4">
                         <!-- Zdjęcie dodane przez Bruno Felix: https://www.pexels.com/pl-pl/zdjecie/zmyslowy-murzyn-zakrywajacy-twarz-4286948/ -->
                     </div>
-                    <div class="portfolio-box photo_5">
+                    <div class="portfolio-box photo_5 box_5 all personal" id="5">
                         <!-- Zdjęcie dodane przez Kammeran Gonzalez-Keola: https://www.pexels.com/pl-pl/zdjecie/burzliwy-ocean-z-duza-fala-5441748/ -->
                     </div>
-                    <div class="portfolio-box photo_6">
+                    <div class="portfolio-box photo_6 box_6 all personal" id="6">
                         <!-- Zdjęcie dodane przez cottonbro: https://www.pexels.com/pl-pl/zdjecie/muzyka-muzyk-styl-zycia-dzwiek-4088014/ -->
                     </div>
-                    <div class="portfolio-box photo_7">
+                    <div class="portfolio-box photo_7 box_7 all event" id="7">
                         <!-- Zdjęcie dodane przez Kateryna Babaieva: https://www.pexels.com/pl-pl/zdjecie/wieza-eiffla-z-pochmurnego-nieba-3721426/ -->
                     </div>
-                    <div class="portfolio-box photo_8">
+                    <div class="portfolio-box photo_8 box_8 all wedding" id="8">
                         <!-- Zdjęcie dodane przez Skylar Kang: https://www.pexels.com/pl-pl/zdjecie/czarny-monitor-z-plaskim-ekranem-na-bialym-stole-6044830/ -->
                     </div>
-                    <div class="portfolio-box photo_9">
+                    <div class="portfolio-box photo_9 box_9 all fashion" id="9">
                         <!-- Zdjęcie dodane przez Ben Mack: https://www.pexels.com/pl-pl/zdjecie/plaza-kobieta-romantyk-lato-6775289/ -->
                     </div>
-                    <div class="portfolio-box photo_10">
+                    <div class="portfolio-box photo_10 box_10 all personal" id="10">
                         <!-- Zdjęcie dodane przez Maria Orlova: https://www.pexels.com/pl-pl/zdjecie/moda-mezczyzna-garnitur-staroswiecki-4947752/ -->
                     </div>
-                    <div class="portfolio-box photo_11">
+                    <div class="portfolio-box photo_11 box_11 all bussiness" id="11">
                         <!-- Zdjęcie dodane przez Amir Esrafili: https://www.pexels.com/pl-pl/zdjecie/osoba-w-czarnym-plaszczu-spacerujaca-po-pokrytym-sniegiem-polu-6555781/ -->
                     </div>
-                    <div class="portfolio-box photo_12">
+                    <div class="portfolio-box photo_12 box_12 all fashion" id="12">
                         <!-- Zdjęcie dodane przez Yuliya Kosolapova: https://www.pexels.com/pl-pl/zdjecie/dzieci-biegna-od-fal-morskich-na-wybrzezu-2958439/ -->
                     </div>
             </div>
