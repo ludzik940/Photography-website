@@ -354,7 +354,7 @@ footer > * {
     .burger-container {
         height: 100%;
         float: right;
-        padding: 0px 30px 10px 10px;
+        padding: 0px 0px 10px 10px;
     }
 
     .burger-container > div {
@@ -406,7 +406,7 @@ footer > * {
 .portfolio-button {
     width: 85%;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 .btn-view-more {
     width: 50%;
