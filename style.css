@@ -383,15 +383,9 @@ footer > * {
 
 
 
-
-
-
-
-
-
 /* MOBILE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 845px) {
     body {
         overflow-x: hidden;
     }
@@ -412,11 +406,58 @@ footer > * {
 
     .burger-container > div {
         width: 35px;
-        height: 3px;
+        height: 5px;
         background-color: white;
-        margin: 5px 0;
+        margin: 6px 0;
     }
 
+/* SIDENAV  */
+
+.navbar--menu__mobile {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.navbar--menu__mobile > a  {
+    margin: 15px 15px 10px 0px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .navbar--menu__mobile > a:hover {
+    text-decoration: underline;
+  }
+
+  /* !BURGER menu icon ANIMATION */
+
+
+.bar {
+    transition: 0.3s ease-in-out;;
+}
+
+.changed-bar_1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.changed-bar_2 {
+    opacity: 0;
+}
+  
+.changed-bar_3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 
 
 
@@ -430,6 +471,7 @@ footer > * {
     font-size: 3em;
     opacity: 0.07;
     letter-spacing: 10px;
+    margin-left:-4%;
 }
 
 .portfolio--title__h3 {

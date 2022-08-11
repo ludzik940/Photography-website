@@ -6,7 +6,6 @@ window.onload = (event) => {
     const portfolioGrid = document.querySelector('.portfolio-change');
 
 
-
     filterItems.forEach((item) => {
         item.addEventListener('click', (e) => {
             let dataId = e.target.getAttribute('data-id');
@@ -26,10 +25,8 @@ window.onload = (event) => {
             for (let i = 0; i < filterItems.length; i++) {
                 filterItems[i].addEventListener("click", function() {
                     let activeNow = document.getElementsByClassName('active');
-
-
-                  activeNow[0].className = activeNow[0].className.replace(" active", "");
-                  this.className += " active";
+                    activeNow[0].className = activeNow[0].className.replace(" active", "");
+                    this.className += " active";
                 });
               }
 
@@ -48,5 +45,29 @@ window.onload = (event) => {
         
         })
     })
+
+
+    const openMenuBtn = document.querySelector('.burger-container');
+    const mobileMenu = document.querySelector('.navbar--menu__mobile');
+
+    const menuToggle = () => {
+        document.querySelector('.bar_1').classList.toggle('changed-bar_1');
+        document.querySelector('.bar_2').classList.toggle('changed-bar_2');
+        document.querySelector('.bar_3').classList.toggle('changed-bar_3');
+        openMenuBtn.classList.toggle('open')
+    }
+
+
+        openMenuBtn.addEventListener('click', () => {
+            if(openMenuBtn.classList.contains('open')) {
+                mobileMenu.style.width = '40%';
+                menuToggle();
+            } else {
+                mobileMenu.style.width = '0%';
+                menuToggle();
+            }
+    
+        })
+
 
   };
