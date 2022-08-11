@@ -9,6 +9,9 @@
     display: none;
 }
 
+.navbar--menu__mobile {
+    display: none;
+}
 
 
 body {
@@ -414,6 +417,7 @@ footer > * {
 /* SIDENAV  */
 
 .navbar--menu__mobile {
+    display: block;
     height: 100%; 
     width: 0; 
     position: fixed; 
