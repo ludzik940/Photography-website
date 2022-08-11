@@ -103,7 +103,6 @@ main {
 .portfolio { 
     width: 85%;
     padding: 15px;
-    height: 100%;
 }
 
 .portfolio--title__h2 {
@@ -173,13 +172,13 @@ main {
 .portfolio--flex {
     margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    height: 200vh;
+    flex-direction: row;
+    height: 80vh;
 }
 
 .portfolio--flex > * {
-    margin-top: 10px;
-    height: 100px;
+    margin-right: 10px;
+    height: 100%;
 }
 
 
