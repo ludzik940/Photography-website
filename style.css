@@ -49,18 +49,67 @@ nav {
 }
 
 .navbar--menu__links {
+    display:flex;
     flex-basis: 70%;
     text-align: right;
     margin-top: 5px;
+    justify-content: end;
 }
 
-.navbar--menu__links > a {
+.navbar--menu__box > a, .services-link {
     text-decoration: none;
     color: white;
     padding-right: 30px;
     letter-spacing: 1px;
     font-weight: 300;
 }
+
+.navbar--menu__box {
+    margin:0;
+    right: 0;
+}
+
+/* SUBMENU  */
+.services--dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.services--dropdown__links {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 15px;
+    border: 1px solid white;
+}
+
+.services--dropdown__links > a {
+    float: none;
+    color: white;
+    background-color: black;;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+.services--submenu:hover .services--dropdown__links {
+    display: block;
+  }
+
+  .services--dropdown__links >  a:hover {
+    background-color: rgb(190, 149, 86);
+    color: black;
+  }
+  
+
+
 
 /* ! WLC TEXT */
 
@@ -408,8 +457,8 @@ footer > * {
     }
 
     .burger-container > div {
-        width: 35px;
-        height: 5px;
+        width: 25px;
+        height: 3px;
         background-color: white;
         margin: 6px 0;
     }
@@ -452,7 +501,7 @@ footer > * {
 }
 
 .changed-bar_1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-4px, 9px);
 }
   
 .changed-bar_2 {
@@ -460,10 +509,34 @@ footer > * {
 }
   
 .changed-bar_3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
 }
 
+/* services links on mobile */
 
+.services--link__mobile {
+    display: none;
+}
+
+.services--link__mobile > li {
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.services--dropdown__item > a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.services--dropdown__item > a:hover {
+    text-decoration: underline;
+}
+
+.services--dropdown__toggle {
+    display: block;
+}
 
 /* PORTFOLIO */
 .portfolio {

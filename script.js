@@ -70,4 +70,11 @@ window.onload = (event) => {
         })
 
 
+        const mobileSub = document.querySelector('.mobile--services');
+        const mobileSubMenu = document.querySelector('.services--link__mobile');
+        mobileSub.addEventListener('click', () => {
+            mobileSubMenu.classList.toggle('services--dropdown__toggle');
+        })
+
+
   };
